@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C283E3D822EF78720056D224 /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C283E3D722EF78720056D224 /* StepViewController.swift */; };
+		C2FCF31B22C0D8DA00E9BECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCF31A22C0D8DA00E9BECE /* AppDelegate.swift */; };
+		C2FCF31D22C0D8DA00E9BECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCF31C22C0D8DA00E9BECE /* ViewController.swift */; };
+		C2FCF32022C0D8DA00E9BECE /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FCF31E22C0D8DA00E9BECE /* HomeScreen.storyboard */; };
+		C2FCF32222C0D8DE00E9BECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FCF32122C0D8DE00E9BECE /* Assets.xcassets */; };
+		C2FCF32522C0D8DE00E9BECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FCF32322C0D8DE00E9BECE /* LaunchScreen.storyboard */; };
+		C2FCF33022C0D8DE00E9BECE /* CPR_CoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCF32F22C0D8DE00E9BECE /* CPR_CoachTests.swift */; };
+		C2FCF33B22C0D8DE00E9BECE /* CPR_CoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCF33A22C0D8DE00E9BECE /* CPR_CoachUITests.swift */; };
+		C2FCF34922C7F60C00E9BECE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCF34822C7F60C00E9BECE /* HomeScreenViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2FCF32C22C0D8DE00E9BECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FCF30F22C0D8DA00E9BECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2FCF31622C0D8DA00E9BECE;
+			remoteInfo = "CPR Coach";
+		};
+		C2FCF33722C0D8DE00E9BECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FCF30F22C0D8DA00E9BECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2FCF31622C0D8DA00E9BECE;
+			remoteInfo = "CPR Coach";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C283E3D722EF78720056D224 /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
+		C2FCF31722C0D8DA00E9BECE /* CPR Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CPR Coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FCF31A22C0D8DA00E9BECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2FCF31C22C0D8DA00E9BECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2FCF31F22C0D8DA00E9BECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeScreen.storyboard; sourceTree = "<group>"; };
+		C2FCF32122C0D8DE00E9BECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2FCF32422C0D8DE00E9BECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2FCF32622C0D8DE00E9BECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FCF32B22C0D8DE00E9BECE /* CPR CoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CPR CoachTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FCF32F22C0D8DE00E9BECE /* CPR_CoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPR_CoachTests.swift; sourceTree = "<group>"; };
+		C2FCF33122C0D8DE00E9BECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FCF33622C0D8DE00E9BECE /* CPR CoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CPR CoachUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FCF33A22C0D8DE00E9BECE /* CPR_CoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPR_CoachUITests.swift; sourceTree = "<group>"; };
+		C2FCF33C22C0D8DE00E9BECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FCF34822C7F60C00E9BECE /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2FCF31422C0D8DA00E9BECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FCF32822C0D8DE00E9BECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FCF33322C0D8DE00E9BECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2FCF30E22C0D8DA00E9BECE = {
+			isa = PBXGroup;
+			children = (
+				C2FCF31922C0D8DA00E9BECE /* CPR Coach */,
+				C2FCF32E22C0D8DE00E9BECE /* CPR CoachTests */,
+				C2FCF33922C0D8DE00E9BECE /* CPR CoachUITests */,
+				C2FCF31822C0D8DA00E9BECE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2FCF31822C0D8DA00E9BECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2FCF31722C0D8DA00E9BECE /* CPR Coach.app */,
+				C2FCF32B22C0D8DE00E9BECE /* CPR CoachTests.xctest */,
+				C2FCF33622C0D8DE00E9BECE /* CPR CoachUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2FCF31922C0D8DA00E9BECE /* CPR Coach */ = {
+			isa = PBXGroup;
+			children = (
+				C2FCF31A22C0D8DA00E9BECE /* AppDelegate.swift */,
+				C2FCF31C22C0D8DA00E9BECE /* ViewController.swift */,
+				C2FCF31E22C0D8DA00E9BECE /* HomeScreen.storyboard */,
+				C283E3D722EF78720056D224 /* StepViewController.swift */,
+				C2FCF34822C7F60C00E9BECE /* HomeScreenViewController.swift */,
+				C2FCF32122C0D8DE00E9BECE /* Assets.xcassets */,
+				C2FCF32322C0D8DE00E9BECE /* LaunchScreen.storyboard */,
+				C2FCF32622C0D8DE00E9BECE /* Info.plist */,
+			);
+			path = "CPR Coach";
+			sourceTree = "<group>";
+		};
+		C2FCF32E22C0D8DE00E9BECE /* CPR CoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2FCF32F22C0D8DE00E9BECE /* CPR_CoachTests.swift */,
+				C2FCF33122C0D8DE00E9BECE /* Info.plist */,
+			);
+			path = "CPR CoachTests";
+			sourceTree = "<group>";
+		};
+		C2FCF33922C0D8DE00E9BECE /* CPR CoachUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2FCF33A22C0D8DE00E9BECE /* CPR_CoachUITests.swift */,
+				C2FCF33C22C0D8DE00E9BECE /* Info.plist */,
+			);
+			path = "CPR CoachUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2FCF31622C0D8DA00E9BECE /* CPR Coach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FCF33F22C0D8DE00E9BECE /* Build configuration list for PBXNativeTarget "CPR Coach" */;
+			buildPhases = (
+				C2FCF31322C0D8DA00E9BECE /* Sources */,
+				C2FCF31422C0D8DA00E9BECE /* Frameworks */,
+				C2FCF31522C0D8DA00E9BECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CPR Coach";
+			productName = "CPR Coach";
+			productReference = C2FCF31722C0D8DA00E9BECE /* CPR Coach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2FCF32A22C0D8DE00E9BECE /* CPR CoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FCF34222C0D8DE00E9BECE /* Build configuration list for PBXNativeTarget "CPR CoachTests" */;
+			buildPhases = (
+				C2FCF32722C0D8DE00E9BECE /* Sources */,
+				C2FCF32822C0D8DE00E9BECE /* Frameworks */,
+				C2FCF32922C0D8DE00E9BECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2FCF32D22C0D8DE00E9BECE /* PBXTargetDependency */,
+			);
+			name = "CPR CoachTests";
+			productName = "CPR CoachTests";
+			productReference = C2FCF32B22C0D8DE00E9BECE /* CPR CoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2FCF33522C0D8DE00E9BECE /* CPR CoachUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FCF34522C0D8DE00E9BECE /* Build configuration list for PBXNativeTarget "CPR CoachUITests" */;
+			buildPhases = (
+				C2FCF33222C0D8DE00E9BECE /* Sources */,
+				C2FCF33322C0D8DE00E9BECE /* Frameworks */,
+				C2FCF33422C0D8DE00E9BECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2FCF33822C0D8DE00E9BECE /* PBXTargetDependency */,
+			);
+			name = "CPR CoachUITests";
+			productName = "CPR CoachUITests";
+			productReference = C2FCF33622C0D8DE00E9BECE /* CPR CoachUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2FCF30F22C0D8DA00E9BECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Oron Barash (student LM)";
+				TargetAttributes = {
+					C2FCF31622C0D8DA00E9BECE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C2FCF32A22C0D8DE00E9BECE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C2FCF31622C0D8DA00E9BECE;
+					};
+					C2FCF33522C0D8DE00E9BECE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C2FCF31622C0D8DA00E9BECE;
+					};
+				};
+			};
+			buildConfigurationList = C2FCF31222C0D8DA00E9BECE /* Build configuration list for PBXProject "CPR Coach" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2FCF30E22C0D8DA00E9BECE;
+			productRefGroup = C2FCF31822C0D8DA00E9BECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2FCF31622C0D8DA00E9BECE /* CPR Coach */,
+				C2FCF32A22C0D8DE00E9BECE /* CPR CoachTests */,
+				C2FCF33522C0D8DE00E9BECE /* CPR CoachUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2FCF31522C0D8DA00E9BECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FCF32522C0D8DE00E9BECE /* LaunchScreen.storyboard in Resources */,
+				C2FCF32222C0D8DE00E9BECE /* Assets.xcassets in Resources */,
+				C2FCF32022C0D8DA00E9BECE /* HomeScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FCF32922C0D8DE00E9BECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FCF33422C0D8DE00E9BECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2FCF31322C0D8DA00E9BECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FCF31D22C0D8DA00E9BECE /* ViewController.swift in Sources */,
+				C2FCF31B22C0D8DA00E9BECE /* AppDelegate.swift in Sources */,
+				C283E3D822EF78720056D224 /* StepViewController.swift in Sources */,
+				C2FCF34922C7F60C00E9BECE /* HomeScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FCF32722C0D8DE00E9BECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FCF33022C0D8DE00E9BECE /* CPR_CoachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FCF33222C0D8DE00E9BECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FCF33B22C0D8DE00E9BECE /* CPR_CoachUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2FCF32D22C0D8DE00E9BECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2FCF31622C0D8DA00E9BECE /* CPR Coach */;
+			targetProxy = C2FCF32C22C0D8DE00E9BECE /* PBXContainerItemProxy */;
+		};
+		C2FCF33822C0D8DE00E9BECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2FCF31622C0D8DA00E9BECE /* CPR Coach */;
+			targetProxy = C2FCF33722C0D8DE00E9BECE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2FCF31E22C0D8DA00E9BECE /* HomeScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2FCF31F22C0D8DA00E9BECE /* Base */,
+			);
+			name = HomeScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2FCF32322C0D8DE00E9BECE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2FCF32422C0D8DE00E9BECE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2FCF33D22C0D8DE00E9BECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2FCF33E22C0D8DE00E9BECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2FCF34022C0D8DE00E9BECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CPR Coach/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oron.CPR-Coach";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2FCF34122C0D8DE00E9BECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CPR Coach/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oron.CPR-Coach";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2FCF34322C0D8DE00E9BECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CPR CoachTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oron.CPR-CoachTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPR Coach.app/CPR Coach";
+			};
+			name = Debug;
+		};
+		C2FCF34422C0D8DE00E9BECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CPR CoachTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oron.CPR-CoachTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPR Coach.app/CPR Coach";
+			};
+			name = Release;
+		};
+		C2FCF34622C0D8DE00E9BECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CPR CoachUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oron.CPR-CoachUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CPR Coach";
+			};
+			name = Debug;
+		};
+		C2FCF34722C0D8DE00E9BECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CPR CoachUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oron.CPR-CoachUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CPR Coach";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2FCF31222C0D8DA00E9BECE /* Build configuration list for PBXProject "CPR Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FCF33D22C0D8DE00E9BECE /* Debug */,
+				C2FCF33E22C0D8DE00E9BECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2FCF33F22C0D8DE00E9BECE /* Build configuration list for PBXNativeTarget "CPR Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FCF34022C0D8DE00E9BECE /* Debug */,
+				C2FCF34122C0D8DE00E9BECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2FCF34222C0D8DE00E9BECE /* Build configuration list for PBXNativeTarget "CPR CoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FCF34322C0D8DE00E9BECE /* Debug */,
+				C2FCF34422C0D8DE00E9BECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2FCF34522C0D8DE00E9BECE /* Build configuration list for PBXNativeTarget "CPR CoachUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FCF34622C0D8DE00E9BECE /* Debug */,
+				C2FCF34722C0D8DE00E9BECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2FCF30F22C0D8DA00E9BECE /* Project object */;
+}

@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CPR Coach" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODk-xg-B8p">
+                                <rect key="frame" x="32" y="84" width="350" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="7mz-LH-eZZ"/>
+                                    <constraint firstAttribute="height" constant="160" id="efk-rs-esh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="58"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80x-F0-wuG">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" red="1" green="0.105439625" blue="0.100243966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="irL-7L-inp"/>
+                                    <constraint firstAttribute="width" constant="216" id="vaD-pg-lQz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Emergency">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bRm-nG-Z6N" kind="show" id="Ncb-od-Bbz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are in an emergency situation, please press the button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7V-XK-4Gp">
+                                <rect key="frame" x="7" y="303" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vO2-cp-t0u"/>
+                                    <constraint firstAttribute="width" constant="400" id="yIK-Pp-LRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ODk-xg-B8p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="7E3-Hm-n8s"/>
+                            <constraint firstItem="k7V-XK-4Gp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Nk-eC-fcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="80x-F0-wuG" secondAttribute="bottom" constant="50" id="EeS-j4-dLv"/>
+                            <constraint firstItem="k7V-XK-4Gp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Shk-Vo-SIs"/>
+                            <constraint firstItem="ODk-xg-B8p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iIh-2q-Y4Y"/>
+                            <constraint firstItem="80x-F0-wuG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r7J-qJ-8lj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.608695652173921" y="133.25892857142856"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="W0Q-bo-KIf">
+            <objects>
+                <viewController id="bRm-nG-Z6N" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aq7-PU-vOi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check For Danger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIW-is-ZFE">
+                                <rect key="frame" x="7" y="84" width="400" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4az-W6-v9H"/>
+                                    <constraint firstAttribute="width" constant="400" id="XnW-3v-ZBt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9L-QZ-V4e">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="5Ag-S2-0CS"/>
+                                    <constraint firstAttribute="height" constant="500" id="NGA-tO-XYs"/>
+                                </constraints>
+                                <string key="text">Look around and see if there is anything that poses an immediate danger either to yourself or the victim. If there is, move both yourself and the victim to a safe location.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8h-c1-BgB">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="6Q1-YQ-4MB"/>
+                                    <constraint firstAttribute="height" constant="85" id="ZXZ-Po-Ft3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4zp-hl-sRr" kind="show" id="61q-bp-GDh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A8h-c1-BgB" firstAttribute="centerX" secondItem="d8C-QX-ndX" secondAttribute="centerX" id="0Bw-i5-B0w"/>
+                            <constraint firstItem="VIW-is-ZFE" firstAttribute="top" secondItem="d8C-QX-ndX" secondAttribute="top" constant="40" id="FC4-1G-fzZ"/>
+                            <constraint firstItem="d8C-QX-ndX" firstAttribute="bottom" secondItem="A8h-c1-BgB" secondAttribute="bottom" constant="50" id="IbR-mi-5Ee"/>
+                            <constraint firstItem="P9L-QZ-V4e" firstAttribute="centerY" secondItem="d8C-QX-ndX" secondAttribute="centerY" id="bTk-5i-n19"/>
+                            <constraint firstItem="VIW-is-ZFE" firstAttribute="centerX" secondItem="d8C-QX-ndX" secondAttribute="centerX" id="f4t-D3-j3m"/>
+                            <constraint firstItem="P9L-QZ-V4e" firstAttribute="centerX" secondItem="d8C-QX-ndX" secondAttribute="centerX" id="yh7-H6-xDw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d8C-QX-ndX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJp-mQ-fVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="133"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="lRR-oI-8L7">
+            <objects>
+                <viewController id="4zp-hl-sRr" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9d-tC-V9O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Consciousness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xid-Nz-VQv">
+                                <rect key="frame" x="7" y="84" width="400" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Bs9-U5-psc"/>
+                                    <constraint firstAttribute="height" constant="150" id="xA9-F2-YXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-wG-iNJ">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="5zU-jF-Ulb"/>
+                                    <constraint firstAttribute="width" constant="400" id="eoj-6g-GcB"/>
+                                </constraints>
+                                <string key="text">If the victim appears to be unconscious, shake or tap their shoulder and loudly ask. "Are you OK?" Now, is the victim conscious or unconscious?</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="tt6-pd-LqU">
+                                <rect key="frame" x="17" y="662" width="380" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofZ-vK-Whc">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="sgK-HP-L2P"/>
+                                            <constraint firstAttribute="width" constant="180" id="tgF-Gm-crZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="27"/>
+                                        <state key="normal" title="Conscious">
+                                            <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ye0-zm-Lhz" kind="show" id="dzI-UU-Uej"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud5-t0-mq0">
+                                        <rect key="frame" x="200" y="0.0" width="180" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="vPS-3N-F7I"/>
+                                            <constraint firstAttribute="width" constant="180" id="zHB-RT-d6s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="27"/>
+                                        <state key="normal" title="Unconscious">
+                                            <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Wd7-2y-P9m" kind="show" id="LRZ-Bm-Tfn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="Iri-ZB-bqm"/>
+                                    <constraint firstAttribute="height" constant="150" id="kts-Wm-zz2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9Z-wG-iNJ" firstAttribute="centerX" secondItem="Wed-U7-mOi" secondAttribute="centerX" id="2vZ-a3-HU8"/>
+                            <constraint firstItem="xid-Nz-VQv" firstAttribute="top" secondItem="Wed-U7-mOi" secondAttribute="top" constant="40" id="35p-2t-nnb"/>
+                            <constraint firstItem="xid-Nz-VQv" firstAttribute="centerX" secondItem="Wed-U7-mOi" secondAttribute="centerX" id="5Ql-SP-1Mk"/>
+                            <constraint firstItem="tt6-pd-LqU" firstAttribute="centerX" secondItem="Wed-U7-mOi" secondAttribute="centerX" id="AcE-yI-MUu"/>
+                            <constraint firstItem="c9Z-wG-iNJ" firstAttribute="centerY" secondItem="Wed-U7-mOi" secondAttribute="centerY" id="JLB-3w-1fO"/>
+                            <constraint firstItem="Wed-U7-mOi" firstAttribute="bottom" secondItem="tt6-pd-LqU" secondAttribute="bottom" constant="50" id="vfn-ET-oye"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wed-U7-mOi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXn-ph-vkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965" y="134"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="y2o-7t-sYh">
+            <objects>
+                <viewController id="Ye0-zm-Lhz" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hhv-ZR-86e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n1-PK-om7">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="fiQ-vS-g5X"/>
+                                    <constraint firstAttribute="height" constant="500" id="hG6-GZ-JyL"/>
+                                </constraints>
+                                <string key="text">With a conscious victim, check to see if they require any medical attention. If you are unsure or think they need medical help, call 911 for assistance.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlS-Hj-cBg">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Zgf-b9-ImI"/>
+                                    <constraint firstAttribute="width" constant="216" id="mBj-Cf-NYo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BmV-xs-2fk" kind="show" id="Gmw-Z8-oDi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Determine Severity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7h-16-d6k">
+                                <rect key="frame" x="7" y="84" width="400" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4S3-Pn-4WK"/>
+                                    <constraint firstAttribute="width" constant="400" id="cKH-XS-Hjm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rlS-Hj-cBg" firstAttribute="centerX" secondItem="9CS-b7-oV5" secondAttribute="centerX" id="BTt-tm-D9O"/>
+                            <constraint firstItem="3n1-PK-om7" firstAttribute="centerX" secondItem="9CS-b7-oV5" secondAttribute="centerX" id="Cou-KI-Gkl"/>
+                            <constraint firstItem="o7h-16-d6k" firstAttribute="centerX" secondItem="9CS-b7-oV5" secondAttribute="centerX" id="HKd-Jr-q6c"/>
+                            <constraint firstItem="3n1-PK-om7" firstAttribute="centerY" secondItem="9CS-b7-oV5" secondAttribute="centerY" id="R7R-au-fdI"/>
+                            <constraint firstItem="o7h-16-d6k" firstAttribute="top" secondItem="9CS-b7-oV5" secondAttribute="top" constant="40" id="RMN-aT-eEh"/>
+                            <constraint firstItem="9CS-b7-oV5" firstAttribute="bottom" secondItem="rlS-Hj-cBg" secondAttribute="bottom" constant="50" id="Wfs-9K-k2E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9CS-b7-oV5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3y-QG-vd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2925" y="-195"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="26d-op-22n">
+            <objects>
+                <viewController id="Wd7-2y-P9m" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24c-PU-Hna">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Count" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Ig-XTU">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="L8V-MQ-5Lj"/>
+                                    <constraint firstAttribute="height" constant="70" id="OWr-Jk-JDu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look around, how many people are around who can help the victim?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOo-4u-kJl">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Jk6-Si-DhN"/>
+                                    <constraint firstAttribute="width" constant="400" id="uzg-3S-kb0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Nzn-vL-mht">
+                                <rect key="frame" x="17" y="662" width="380" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUf-mR-AYj">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="0nu-XI-hS3"/>
+                                            <constraint firstAttribute="width" constant="180" id="G97-PO-QVQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="27"/>
+                                        <state key="normal" title="Just Me">
+                                            <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="utM-Ni-Dpd" kind="show" id="6xT-bz-ylx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw0-od-6Fq">
+                                        <rect key="frame" x="200" y="0.0" width="180" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="256-jM-G6S"/>
+                                            <constraint firstAttribute="width" constant="180" id="HJa-Tu-Lb7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="27"/>
+                                        <state key="normal" title="Two or More">
+                                            <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cdX-lV-T8L" kind="show" id="prK-WX-7Gn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="EHa-Ze-Tf5"/>
+                                    <constraint firstAttribute="width" constant="380" id="s47-6E-PRo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bpm-Ig-XTU" firstAttribute="centerX" secondItem="vCd-nS-Exg" secondAttribute="centerX" id="DfT-VO-qsi"/>
+                            <constraint firstItem="Nzn-vL-mht" firstAttribute="centerX" secondItem="vCd-nS-Exg" secondAttribute="centerX" id="cMH-n7-AFl"/>
+                            <constraint firstItem="vCd-nS-Exg" firstAttribute="bottom" secondItem="Nzn-vL-mht" secondAttribute="bottom" constant="50" id="eHG-Ox-pUQ"/>
+                            <constraint firstItem="FOo-4u-kJl" firstAttribute="centerX" secondItem="vCd-nS-Exg" secondAttribute="centerX" id="ghR-ca-oH6"/>
+                            <constraint firstItem="Bpm-Ig-XTU" firstAttribute="top" secondItem="vCd-nS-Exg" secondAttribute="top" constant="40" id="kEW-Kv-qS8"/>
+                            <constraint firstItem="FOo-4u-kJl" firstAttribute="centerY" secondItem="vCd-nS-Exg" secondAttribute="centerY" id="wDr-qk-0A3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vCd-nS-Exg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADM-eA-Fgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2925" y="462"/>
+        </scene>
+        <!--Finished View Controller-->
+        <scene sceneID="Qj4-Hp-7Vd">
+            <objects>
+                <viewController id="BmV-xs-2fk" customClass="FinishedViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shs-h6-Cvq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finished" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X2-ak-vdQ">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="KUh-6w-GLT"/>
+                                    <constraint firstAttribute="height" constant="70" id="ZtM-y3-o7F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih5-Jf-NWc">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="0ZY-Xj-AG7"/>
+                                    <constraint firstAttribute="width" constant="400" id="0p6-Ur-9AI"/>
+                                </constraints>
+                                <string key="text">You've done your job as a good samaritan, make sure to listen to any medical professionals and any instructions they give if necessary.</string>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFF-iC-RVi">
+                                <rect key="frame" x="77" y="727" width="260" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Ls3-UY-Xo6"/>
+                                    <constraint firstAttribute="width" constant="260" id="hjV-tV-9Zb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Back to home">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tAj-ON-fcU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LPM-BM-TgH" firstAttribute="bottom" secondItem="FFF-iC-RVi" secondAttribute="bottom" constant="50" id="Xeb-k3-9ht"/>
+                            <constraint firstItem="Ih5-Jf-NWc" firstAttribute="centerX" secondItem="LPM-BM-TgH" secondAttribute="centerX" id="cxm-6d-Y8X"/>
+                            <constraint firstItem="2X2-ak-vdQ" firstAttribute="top" secondItem="LPM-BM-TgH" secondAttribute="top" constant="40" id="mSt-o3-IOX"/>
+                            <constraint firstItem="FFF-iC-RVi" firstAttribute="centerX" secondItem="LPM-BM-TgH" secondAttribute="centerX" id="nZT-GJ-xEs"/>
+                            <constraint firstItem="2X2-ak-vdQ" firstAttribute="centerX" secondItem="LPM-BM-TgH" secondAttribute="centerX" id="q8B-4F-hGK"/>
+                            <constraint firstItem="Ih5-Jf-NWc" firstAttribute="centerY" secondItem="LPM-BM-TgH" secondAttribute="centerY" id="yMB-d9-juJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LPM-BM-TgH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHI-QQ-DiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8414" y="133"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="St7-de-S16">
+            <objects>
+                <viewController id="utM-Ni-Dpd" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mja-5y-h6T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIa-fa-BqU">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="0lE-ia-c2k"/>
+                                    <constraint firstAttribute="height" constant="500" id="KW1-t5-np7"/>
+                                </constraints>
+                                <string key="text">If you are able, call 911 or your local emergency services and comply with any instructions they give you. In the meantime, find an AED if one is available.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-8H-BIX">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Iaa-bd-ObN"/>
+                                    <constraint firstAttribute="width" constant="216" id="PLh-x5-FWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X4R-GV-eWk" kind="show" id="oNw-mg-0R8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call 911" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrZ-Wq-DbE">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="2We-P4-D2r"/>
+                                    <constraint firstAttribute="height" constant="70" id="X0t-Dl-SZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fPI-8H-BIX" firstAttribute="centerX" secondItem="tFX-Nf-QNj" secondAttribute="centerX" id="3HE-0o-CPW"/>
+                            <constraint firstItem="tFX-Nf-QNj" firstAttribute="bottom" secondItem="fPI-8H-BIX" secondAttribute="bottom" constant="50" id="CTH-KU-70j"/>
+                            <constraint firstItem="OIa-fa-BqU" firstAttribute="centerY" secondItem="tFX-Nf-QNj" secondAttribute="centerY" id="F6j-oB-AZ7"/>
+                            <constraint firstItem="yrZ-Wq-DbE" firstAttribute="top" secondItem="tFX-Nf-QNj" secondAttribute="top" constant="40" id="PLB-qp-snL"/>
+                            <constraint firstItem="OIa-fa-BqU" firstAttribute="centerX" secondItem="tFX-Nf-QNj" secondAttribute="centerX" id="VCR-st-8im"/>
+                            <constraint firstItem="yrZ-Wq-DbE" firstAttribute="centerX" secondItem="tFX-Nf-QNj" secondAttribute="centerX" id="kPg-NF-LL1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tFX-Nf-QNj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4q-xa-ysQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3881" y="-195"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="giN-er-rcU">
+            <objects>
+                <viewController id="cdX-lV-T8L" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LD3-DG-4wC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMl-vH-4VW">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="AnW-JS-QMv"/>
+                                    <constraint firstAttribute="height" constant="500" id="vHm-lT-bWR"/>
+                                </constraints>
+                                <string key="text">Whoever has the most CPR experience should be ready to perform it. If an AED is available it should be retrieved by another person, and 911 should be called by a third person if one is present. If not, you or the other person should call.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-E9-Vzd">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="Izk-b5-grl"/>
+                                    <constraint firstAttribute="height" constant="85" id="qhv-16-nEQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X4R-GV-eWk" kind="show" id="K2f-ZX-bk0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assign Jobs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR5-Fc-lLU">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="EtE-ED-80v"/>
+                                    <constraint firstAttribute="height" constant="70" id="FDI-kg-Uhp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9sR-qv-e21" firstAttribute="bottom" secondItem="VEM-E9-Vzd" secondAttribute="bottom" constant="50" id="06C-Nb-f0c"/>
+                            <constraint firstItem="NR5-Fc-lLU" firstAttribute="centerX" secondItem="9sR-qv-e21" secondAttribute="centerX" id="5vI-WE-DYO"/>
+                            <constraint firstItem="XMl-vH-4VW" firstAttribute="centerX" secondItem="9sR-qv-e21" secondAttribute="centerX" id="8ud-ZP-etL"/>
+                            <constraint firstItem="VEM-E9-Vzd" firstAttribute="centerX" secondItem="9sR-qv-e21" secondAttribute="centerX" id="BUn-Af-86f"/>
+                            <constraint firstItem="XMl-vH-4VW" firstAttribute="centerY" secondItem="9sR-qv-e21" secondAttribute="centerY" id="CYr-4Z-nbZ"/>
+                            <constraint firstItem="NR5-Fc-lLU" firstAttribute="top" secondItem="9sR-qv-e21" secondAttribute="top" constant="40" id="oOQ-TD-ibY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9sR-qv-e21"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dF-mw-kOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3880" y="461"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="OKY-53-1D9">
+            <objects>
+                <viewController id="X4R-GV-eWk" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Opc-fJ-k6F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If an AED is available, activate it and follow the given instructions. If one is not available, click 'Next Step'." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-jf-lYS">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="VEW-J8-4UR"/>
+                                    <constraint firstAttribute="height" constant="500" id="YBJ-hw-0g2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-s6-WSh">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="6kA-ZW-Q9S"/>
+                                    <constraint firstAttribute="width" constant="216" id="T5O-Bg-OO8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Iuh-Tp-aEV" kind="show" id="LWg-yp-Wm5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use AED" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vna-X9-MNo">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Dd0-vR-izw"/>
+                                    <constraint firstAttribute="width" constant="400" id="ymI-yQ-VdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GPP-jf-lYS" firstAttribute="centerY" secondItem="ke3-mp-N3Q" secondAttribute="centerY" id="0bs-GK-ZSM"/>
+                            <constraint firstItem="Vna-X9-MNo" firstAttribute="top" secondItem="ke3-mp-N3Q" secondAttribute="top" constant="40" id="DKw-kG-VWp"/>
+                            <constraint firstItem="GPP-jf-lYS" firstAttribute="centerX" secondItem="ke3-mp-N3Q" secondAttribute="centerX" id="RTY-pX-eQy"/>
+                            <constraint firstItem="fhd-s6-WSh" firstAttribute="centerX" secondItem="ke3-mp-N3Q" secondAttribute="centerX" id="USl-4u-8lX"/>
+                            <constraint firstItem="Vna-X9-MNo" firstAttribute="centerX" secondItem="ke3-mp-N3Q" secondAttribute="centerX" id="kBa-eO-q7a"/>
+                            <constraint firstItem="ke3-mp-N3Q" firstAttribute="bottom" secondItem="fhd-s6-WSh" secondAttribute="bottom" constant="50" id="kbp-gT-wbH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ke3-mp-N3Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UE9-v9-s5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4784" y="134"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="DmA-DQ-nCm">
+            <objects>
+                <viewController id="Iuh-Tp-aEV" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVK-4q-LvM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRJ-Az-BaZ">
+                                <rect key="frame" x="7" y="174" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="kXG-KG-xAV"/>
+                                    <constraint firstAttribute="width" constant="400" id="o8K-5E-h2L"/>
+                                </constraints>
+                                <string key="text">1: Lay the victim on their back on a firm surface
+2: Kneel next to the person's neck and shoulders</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbE-8t-yqo">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="73J-nO-dkJ"/>
+                                    <constraint firstAttribute="width" constant="216" id="hvW-qT-JAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TTW-ao-fwk" kind="show" id="JBc-xB-wcv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPR Setup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaB-fB-HND">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2rT-pD-BUu"/>
+                                    <constraint firstAttribute="width" constant="400" id="P9T-yH-BN4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chest Compressions" translatesAutoresizingMaskIntoConstraints="NO" id="J8X-8r-v3a">
+                                <rect key="frame" x="7" y="494" width="400" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Ywo-lB-t3Y"/>
+                                    <constraint firstAttribute="height" constant="213" id="jTA-4E-zAD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CRG-qy-fnW" firstAttribute="bottom" secondItem="NbE-8t-yqo" secondAttribute="bottom" constant="50" id="1yq-vF-sJn"/>
+                            <constraint firstItem="J8X-8r-v3a" firstAttribute="centerX" secondItem="CRG-qy-fnW" secondAttribute="centerX" id="5ow-pj-wR5"/>
+                            <constraint firstItem="J8X-8r-v3a" firstAttribute="top" secondItem="KRJ-Az-BaZ" secondAttribute="bottom" constant="20" id="M2d-gW-f2W"/>
+                            <constraint firstItem="KRJ-Az-BaZ" firstAttribute="top" secondItem="VaB-fB-HND" secondAttribute="bottom" constant="20" id="V3s-gB-fPG"/>
+                            <constraint firstItem="KRJ-Az-BaZ" firstAttribute="centerX" secondItem="CRG-qy-fnW" secondAttribute="centerX" id="fa7-Ki-OTZ"/>
+                            <constraint firstItem="VaB-fB-HND" firstAttribute="top" secondItem="CRG-qy-fnW" secondAttribute="top" constant="40" id="jfN-Rs-ZbW"/>
+                            <constraint firstItem="NbE-8t-yqo" firstAttribute="centerX" secondItem="CRG-qy-fnW" secondAttribute="centerX" id="kJa-0S-b1i"/>
+                            <constraint firstItem="VaB-fB-HND" firstAttribute="centerX" secondItem="CRG-qy-fnW" secondAttribute="centerX" id="yL1-RA-ejw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CRG-qy-fnW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRJ-y3-6Ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5769.5652173913049" y="132.58928571428572"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="VDI-Ue-uJ3">
+            <objects>
+                <viewController id="TTW-ao-fwk" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRS-df-OCL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EC-Kn-7xv">
+                                <rect key="frame" x="7" y="174" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="b4j-c2-EMy"/>
+                                    <constraint firstAttribute="width" constant="400" id="onf-jH-fzD"/>
+                                </constraints>
+                                <string key="text">Place the heel of one hand on the middle of their chest, and place your other hand over the first. Keep your elbows straight and bring your shoulders straight above your hands.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDz-pn-hhk">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="dOO-tu-6TC"/>
+                                    <constraint firstAttribute="width" constant="216" id="nlV-GR-la7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RoJ-AN-AKx" kind="show" id="y1t-FZ-PiJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish Setup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2F-hx-s9r">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Gkz-uK-25e"/>
+                                    <constraint firstAttribute="height" constant="70" id="e8x-eQ-oNN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand-placement" translatesAutoresizingMaskIntoConstraints="NO" id="5UQ-tv-Pzd">
+                                <rect key="frame" x="7" y="494" width="400" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="yQB-kX-3fF"/>
+                                    <constraint firstAttribute="width" constant="400" id="ywr-Vf-NHY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5UQ-tv-Pzd" firstAttribute="top" secondItem="5EC-Kn-7xv" secondAttribute="bottom" constant="20" id="8IO-YN-iKh"/>
+                            <constraint firstItem="5EC-Kn-7xv" firstAttribute="centerX" secondItem="Jbh-KC-jue" secondAttribute="centerX" id="DM6-Or-zgf"/>
+                            <constraint firstItem="zDz-pn-hhk" firstAttribute="centerX" secondItem="Jbh-KC-jue" secondAttribute="centerX" id="FSQ-yD-fDN"/>
+                            <constraint firstItem="5UQ-tv-Pzd" firstAttribute="centerX" secondItem="Jbh-KC-jue" secondAttribute="centerX" id="J0b-gm-ynf"/>
+                            <constraint firstItem="5EC-Kn-7xv" firstAttribute="top" secondItem="L2F-hx-s9r" secondAttribute="bottom" constant="20" id="SLB-sA-gjH"/>
+                            <constraint firstItem="Jbh-KC-jue" firstAttribute="bottom" secondItem="zDz-pn-hhk" secondAttribute="bottom" constant="50" id="gLv-3F-jNU"/>
+                            <constraint firstItem="L2F-hx-s9r" firstAttribute="top" secondItem="Jbh-KC-jue" secondAttribute="top" constant="40" id="lcB-V2-o2G"/>
+                            <constraint firstItem="L2F-hx-s9r" firstAttribute="centerX" secondItem="Jbh-KC-jue" secondAttribute="centerX" id="pe5-ZC-gB7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jbh-KC-jue"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mvk-FA-tJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6675" y="134"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="sU8-xa-b2q">
+            <objects>
+                <viewController id="RoJ-AN-AKx" customClass="StepViewController" customModule="CPR_Coach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6F-EV-6B4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6d-Vd-P92">
+                                <rect key="frame" x="7" y="203" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="KZk-gT-DXp"/>
+                                    <constraint firstAttribute="width" constant="400" id="hEN-I3-FAg"/>
+                                </constraints>
+                                <string key="text">Use your upper body weight to push straight down and compress the chest between 2-2.4 inches, and keep pushing hard at a rate of 100 to 120 beats per minute until there are signs of movement or emergency services arrive. You can also take turns doing compressions every couple of minutes if there are others there with you.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G93-dT-hL9">
+                                <rect key="frame" x="99" y="727" width="216" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="VTu-QY-ODg"/>
+                                    <constraint firstAttribute="width" constant="216" id="Wm5-Db-WB8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="38"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BmV-xs-2fk" kind="show" id="XOE-Nv-D6F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin CPR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVA-DB-DyF">
+                                <rect key="frame" x="7" y="84" width="400" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="KBc-cT-Vyi"/>
+                                    <constraint firstAttribute="height" constant="70" id="Yey-Jc-BXQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076074818350000004" green="0.089393175209999995" blue="0.74839067100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XVA-DB-DyF" firstAttribute="centerX" secondItem="bwW-Wx-QZT" secondAttribute="centerX" id="6SS-6q-GhL"/>
+                            <constraint firstItem="bwW-Wx-QZT" firstAttribute="bottom" secondItem="G93-dT-hL9" secondAttribute="bottom" constant="50" id="7Nz-1b-oDp"/>
+                            <constraint firstItem="XVA-DB-DyF" firstAttribute="top" secondItem="bwW-Wx-QZT" secondAttribute="top" constant="40" id="Wjc-dI-TE5"/>
+                            <constraint firstItem="t6d-Vd-P92" firstAttribute="centerX" secondItem="bwW-Wx-QZT" secondAttribute="centerX" id="cGN-dU-KOo"/>
+                            <constraint firstItem="t6d-Vd-P92" firstAttribute="centerY" secondItem="bwW-Wx-QZT" secondAttribute="centerY" id="ewb-jC-VH8"/>
+                            <constraint firstItem="G93-dT-hL9" firstAttribute="centerX" secondItem="bwW-Wx-QZT" secondAttribute="centerX" id="yTN-9Q-K69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bwW-Wx-QZT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emj-MX-RFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7525" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chest Compressions" width="286" height="176"/>
+        <image name="hand-placement" width="300" height="216"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oNw-mg-0R8"/>
+        <segue reference="Gmw-Z8-oDi"/>
+    </inferredMetricsTieBreakers>
+</document>
